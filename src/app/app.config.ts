@@ -1,3 +1,5 @@
+//we can say that this file is insted of App Model in the past
+
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 

@@ -1,0 +1,51 @@
+<p>roles works!</p>
+
+<div class="row">
+
+    <div class="col-3">
+        <p> {{firstName}} </p>  <!--This Way Caled an Interpulation bindling-->
+    </div>
+    <div class="col-3">
+        <P>{{angularVersion}}</P>  <!--This Way Caled an Interpulation bindling-->
+    </div>
+    <div class="col-3">
+        <P> {{currentDate}} </P>  <!--This Way Caled an Interpulation bindling-->
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <input type="text" [value]="firstName"  class="form-control"> <!-- property binding-->
+    </div>
+   
+    <div class="col-3">
+
+        <input type="text" [(ngModel)]="firstName">
+    </div>
+   
+    <div class="col-3">
+        <input [type]="inputType_R">
+        <input [type]="inputType_T">
+        <input [type]="inputType_b">
+    </div>
+<div class="col-3">{{selectState}}</div>
+
+    <div class="col-3">
+        <select [(ngModel)]="selectState">
+            <option value="Egypt">Egypt</option>
+            <option value="USA">USA</option>
+            <option value="Rusia">Rusia</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <button (click)="showWelcomeMessage()" class="btn btn-success"> Welocme Message</button>
+        </div>
+        <div class="col-3">
+          <button (click)="showMessage('hello bebo!')" class="btn btn-success"> for abanoub </button>
+
+        </div>
+
+
+    </div>
+</div>
